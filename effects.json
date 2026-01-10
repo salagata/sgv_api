@@ -1,0 +1,1611 @@
+{
+  "normal": {
+    "code": "volume # 1",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "reversed": {
+    "code": "reverse #",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 591": {
+    "code": "invert #\nswaprgba # bgr\nhueshifthsv # -145\nswirl # 100\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(2/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "confusion": {
+    "code": "contrast # -1\nhaah #\ncopy # #$\nconvert #$ audio/wav \nreverse #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "confusion hsv": {
+    "code": "invert #\nhueshifthsv # 180\nhaah #\ncopy # #$\nconvert #$ audio/wav \nreverse #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major": {
+    "code": "invert #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\ncopy #$ #$d\ncopy #$ #$e\naudiopitch #$ 2**(12/12)\naudiopitch #$a 2**(7/12)\naudiopitch #$b 2**(4/12)\naudiopitch #$d 2**(-5/12)\naudiopitch #$e 2**(-12/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\naudioputmix #$ #$d\nvolume #$\naudioputmix #$ #$e\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 1": {
+    "code": "invert #\nhueshifthsv # 180\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(8/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 2": {
+    "code": "invertrgba # 1 1 0\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(4/12)\naudiopitch #$q 2**(-5/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 5": {
+    "code": "invertrgba # 0 1 1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(4/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 7": {
+    "code": "invert #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(3/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 16": {
+    "code": "invert #\nhueshifthsv # -140\nflop #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-3/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "luig group": {
+    "code": "hueshifthsv # -50\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-1/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "mari group": {
+    "code": "hueshifthsv # 50\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(1/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "custom": {
+    "code": "{arg:1}",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "split pitch": {
+    "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**({arg:1}/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "g major 25": {
+    "code": "hueshifthsv # -50\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-1/12)\naudiopitch #$p 2**(-8/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "split 2 pitches": {
+    "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**({arg:1}/12)\naudiopitch #$p 2**({arg:2}/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 2,
+    "params": [
+      "{arg:1}",
+      "{arg:2}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "haha major": {
+    "code": "slide # 1 left\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-1.5/12)\naudiopitch #$p 2**(1.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "haha major 3.0": {
+    "code": "slide # 1 up\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-3.5/12)\naudiopitch #$p 2**(3.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "confusion reversed": {
+    "code": "contrast # -1\nhaah #\ncopy # #$\nconvert #$ audio/wav \nreverse #\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "confusion reversed hsv": {
+    "code": "invert #\nhueshifthsv # 180\nhaah #\ncopy # #$\nconvert #$ audio/wav \nreverse #\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "does respond": {
+    "code": "hueshifthsv # -50\nswirl # -90\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-12/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "does not respond": {
+    "code": "hueshifthsv # 50\nswirl # 90\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(12/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 4": {
+    "code": "create bg #w #h 0 0 0\noverlay bg # 0 0 white 0.1 0.5\noverlay # bg\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "real g major 4": {
+    "code": "huecurvergba # all 0 1 0\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor 591": {
+    "code": "invert #\nswaprgba # bgr\nhueshifthsv # 35\nswirl # -100\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-2/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "goo goo ga ga": {
+    "code": "swaprgba # bgr\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(12/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "green lowers": {
+    "code": "swaprgba # grb\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-12/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "amtve major": {
+    "code": "hueshifthsv # 180\nhooh #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 88": {
+    "code": "grayscale #\nhuecurvergba # red 1 0 0\nhuecurvergba # green 0.29411764705882354 0.09803921568627451 0\nhuecurvergba # blue 1 0.29411764705882354 0\nswirl # -50\nwaaw #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(3/12)\naudiopitch #$p 2**(-4/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "baarens g major 1": {
+    "code": "invert #\nhueshifthsv # 180\nswirl # -3\nhaah #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(4/12)\naudiopitch #$p 2**(-3/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "pitch": {
+    "code": "copy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**({arg:1}/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "e major 16": {
+    "code": "gold #\ninvert #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-12/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "x major 159": {
+    "code": "grayscale #\nhuecurvergba # red 1 1 0\nhuecurvergba # green 1 0 0\nhuecurvergba # blue 1 1 0\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 302": {
+    "code": "flip #\nflop #\ncontrast # -1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-20/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 91": {
+    "code": "swaprgba # bgr\nhueshifthsv # 180\nhaah #\ndistort # resize 512 512\nrotate # -90\ndistort # arc 30 90\ncontain # 640 512\ndistort # bilinear_forward 88 70 -116 -74 60 303 -48 395 550 30 642 -24 553 382 642 368\ndistort # resize 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(1/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 74": {
+    "code": "contrast # -1\nexplode # 0.5\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(2/12)\naudiopitch #$p 2**(9/12)\naudiopitch #$q 2**(-10/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor 91": {
+    "code": "swaprgba # bgr\nwaaw #\ndistort # resize 512 512\nrotate # -90\ndistort # arc 30 90\ncontain # 640 512\ndistort # bilinear_forward 88 70 -116 -74 60 303 -48 395 550 30 642 -24 553 382 642 368\ndistort # resize 0w 0h\nflop #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-1/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "crying x": {
+    "code": "invert #\nhueshifthsv # -140\nwave # #h/18 #w/4.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "sad x": {
+    "code": "invert #\nhueshifthsv # -140\nwave # -#h/12 #w/2.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "low pinch": {
+    "code": "implode # 0.36\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-2/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "i killed x": {
+    "code": "explode #\nhueshifthsv # -140\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-8/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "getting faster": {
+    "code": "speed # 2\nrepeat # 2",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "getting slower": {
+    "code": "speed # 0.5\nsnip # 0 #d/2",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "low voice": {
+    "code": "hueshifthsvffmpeg # 180\nhaah #\nspeed # 0.75\naudiopitch # 0.75",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "low voice hsv": {
+    "code": "hueshifthsv # 180\nhaah #\nspeed # 0.75\naudiopitch # 0.75",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "slow voice": {
+    "code": "hueshifthsv # 120 100\nwaaw #\nspeed # 2**(-3/12)\naudiopitch # 2**(-3/12)",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor 4": {
+    "code": "create bg #w #h 255 255 255\noverlay bg # 0 0 black 0.1 0.5\noverlay # bg\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor 2": {
+    "code": "invertrgba # 0 0 1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(-4/12)\naudiopitch #$q 2**(5/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor 5": {
+    "code": "invertrgba # 1 0 0\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-4/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 19": {
+    "code": "swaprgba # bgr\nhueshifthsv # 180\nhaah #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-1/12)\naudiopitch #$p 2**(2/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 134": {
+    "code": "swaprgba # bgr\nhaah #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(3/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 6": {
+    "code": "huecurvergba # all 0,0 0.5,0 0.502,1 1,1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-8/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 8": {
+    "code": "huecurvergba # all 0,0 0.5,0 0.502,1 1,1\ninvert #\nhueshifthsv # 180\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 18": {
+    "code": "hueshifthsv # 0 100\ncopy # #$\n    convert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(-8/12)\naudiopitch #$1 2**(0/12)\naudioputmix #$0 #$1\n    volume #$0\nrepeatduration #$0 #d\n    audioputreplace # #$0\n",
+    "args": "0",
+    "params": [],
+    "author": "<@1407526394837336064>"
+  },
+  "g major 15": {
+    "code": "wave # #h/18 #w/4.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(5/12)\naudioputmix #$ #$p\naudiodestroy #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "91-dxi": {
+    "code": "invert #\nhueshifthsv # 70 100\nshake # 0 10 true\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-3.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 0": {
+    "code": "hueshifthsv # 180\ninvert #\nhuecurvergba # all 0 1 0\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(-10/12)\naudiopitch #$q 2**(10/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 9 v2": {
+    "code": "invert #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-2/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "haha major 2.0": {
+    "code": "slide # 1 left\nslide # 1 up\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-2.5/12)\naudiopitch #$p 2**(2.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "happy x": {
+    "code": "invert #\nhueshifthsv # 180\nwave # #h/18 #w/2.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(12/12)\naudiopitch #$p 2**(4/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "diamond major": {
+    "code": "hueshifthsv # 25\nflop #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(2/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "not scary": {
+    "code": "hueshifthsv # 180\nwaaw #\nrotate # -90\nwaves # 0w/60 0w/4 6\nflop #\nwaves # 0w/70 0w/6 4\nflop #\nwaves # 0w/110 0w/12 6\nflop #\nwaves # 0w/100 0w/4 7\nwaves # 0w/200 0w/20 3\nflop #\nwaves # 0w/250 0w/1 5\nrotate # 90\nrotate # 90\nwaves # 0w/300 0w/2 10\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-2.5/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "pika major": {
+    "code": "hueshifthsvffmpeg # 25\nhueshifthsv # 0 100\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(-7/12)\naudiopitch #$q 2**(7/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 225": {
+    "code": "hueshifthsv # 180\nswaprgba # bgr\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-4/12)\naudiopitch #$p 2**(5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "tacoma major": {
+    "code": "contrast # -1\nswaprgba # bgr\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-24/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "simulator v19": {
+    "code": "invert #\nhueshifthsv # -70\nrotate # 90\nwave # 0h/8 0w/3.6\nrotate # -90\ncover # 0w 0h\nwave # -0h/12 0w/2\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$2\ncopy #$ #$3\naudiopitch #$2 2**(7/12)\naudiopitch #$3 2**(-12/12)\naudioputmix #$ #$2\nvolume #$\naudioputmix #$ #$3\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 20": {
+    "code": "copy # #2\nhueshifthsv #2 -50\ncrop # 0w/2 0h\ncrop #2 0w/2 0h 0w\njoin # #2\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-1/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "chordeds g major 10": {
+    "code": "waaw #\nswirl # -100\nhueshifthsv # 120 50\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(3/12)\naudiopitch #$q 2**(-4/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 90": {
+    "code": "hueshifthsv # -50\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-1/12)\naudiopitch #$p 2**(1/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "multiplied effect": {
+    "code": "distort # resize 512 512\nrotate # -90\ndistort # arc 30 90\ncontain # 640 512\ndistort # bilinear_forward 88 70 -116 -74 60 303 -48 395 550 30 642 -24 553 382 642 368\ndistort # resize 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(12/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "divided effect": {
+    "code": "swaprgba # bgr\nflop #\ndistort # resize 512 512\nrotate # -90\ndistort # arc 30 90\ncontain # 640 512\ndistort # bilinear_forward 88 70 -116 -74 60 303 -48 395 550 30 642 -24 553 382 642 368\ndistort # resize 0w 0h\nflop #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-12/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "baarens g major 2": {
+    "code": "invertrgba # 0 1 0\nswaprgba # gbr\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(2/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 23": {
+    "code": "hueshifthsv # -140\nflop #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(-3/12)\naudiopitch #$q 2**(3/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor": {
+    "code": "hueshifthsv # 180\ncontrast # -1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\ncopy #$ #$d\ncopy #$ #$e\naudiopitch #$ 2**(-12/12)\naudiopitch #$a 2**(-7/12)\naudiopitch #$b 2**(-4/12)\naudiopitch #$d 2**(5/12)\naudiopitch #$e 2**(12/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\naudioputmix #$ #$d\nvolume #$\naudioputmix #$ #$e\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 64": {
+    "code": "swaprgba # rbg\nflop #\ndistort # resize 512 512\nrotate # -90\ndistort # arc 30 90\ncontain # 640 512\ndistort # bilinear_forward 88 70 -116 -74 60 303 -48 395 550 30 642 -24 553 382 642 368\ndistort # resize 0w 0h\nflop #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-9/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 51": {
+    "code": "invert #\nhueshifthsv # 150\nflop #\nwaves # 0h/28 0w/5 5\ncover # 0w 0h\nrotate # 90\nwaves # 0h/28 0w/5 5\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "too ruins tree": {
+    "code": "explode #\nswaprgba # rbg\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(4/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "rotation wave": {
+    "code": "foreachframe # 0 #fc \"rotate #x (180*(idx/#fc)) none true\"\nrotate # 90\nwave # -0h/9 0w/1.75\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-4/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "wavy rotation": {
+    "code": "hueshifthsvffmpeg # 152.2 1.5\ninvert #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\naudiopitch #$ 2**(-9/12)\naudiopitch #$a 2**(-16/12)\naudioputmix #$ #$a\nvolume #$\nforeachframe # 0 #fc \"distort #x scale_rotate_translate (540*(idx/#fc))\"\nrotate # 270\nwave # 0w/30 0w/4.5\nrotate # 90\ncover # 0w 0h\nrepeatduration # #$d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "crazy slow killed": {
+    "code": "hueshifthsv # 65\nexplode # 1.5\nrotate # 90\nwave # 0h/8 0w/3.6\nrotate # -90\ncover # 0w 0h\nwave # -0h/12 0w/2\ncover # 0w 0h\nspeed # 0.5\nspeed # 0.6\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(6/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "crazy slow killed no speed": {
+    "code": "hueshifthsv # 65\nexplode # 1.5\nrotate # 90\nwave # 0h/8 0w/3.6\nrotate # -90\ncover # 0w 0h\nwave # -0h/12 0w/2\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(6/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "ripple pitch": {
+    "code": "hueshifthsv # -90\ndetunnel #\nwiggle # right 30 4\ntunnel #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-6/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "mirror twirls": {
+    "code": "haah #\nforeachframe # 0 #fc \"swirl #x (-90*((idx-#fc)/#fc))\"\naudiopitch # 2**(-8/12)\nbitrate # 0 32000",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "cold major": {
+    "code": "grayscale #\nhuecurvergba # red 0 0 0 0\nhuecurvergba # green 0.5 0 0 0\nhuecurvergba # blue 0.5 0.2 0.7 1\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-2/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "lost effect": {
+    "code": "hueshifthsv # 180\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-8/12)\naudiopitch #$p 2**(12/12)\naudiopitch #$p 2**(4/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "smurf effect": {
+    "code": "hueshifthsv # 180\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-12/12)\naudiopitch #$p 2**(12/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "$ormulator": {
+    "code": "hueshifthsv # 180\ncontrast # -1\ninvert #\nrotate # -90\nwaves # 0w/60 0w/4 6\nflop #\nwaves # 0w/70 0w/6 4\nflop #\nwaves # 0w/110 0w/12 6\nflop #\nwaves # 0w/100 0w/4 7\nwaves # 0w/200 0w/20 3\nflop #\nwaves # 0w/250 0w/1 5\nrotate # 90\nrotate # 90\nwaves # 0w/300 0w/2 10\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(4/12)\naudiopitch #$p 2**(7/12)\naudiopitch #$q 2**(-12/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 77114": {
+    "code": "haah #\nreverse #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(3/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "hollys g major 1": {
+    "code": "haah #\ncontrast # -1\nhueshifthsvffmpeg # 90\nswaprgba # bgr\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-1/12)\naudiopitch #$p 2**(1/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "split opposite pitches": {
+    "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-{arg:1}/12)\naudiopitch #$p 2**({arg:1}/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "billy gardiners g major 1": {
+    "code": "invert #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 9": {
+    "code": "grayscale #\nhuecurvergba # red 0.5 0 0.9\nhuecurvergba # green 1 0.2 0.95\nhuecurvergba # blue 0 0.4 0.95\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\ncopy #$ #$r\naudiopitch #$ 2**(-12/12)\naudiopitch #$q 2**(5/12)\naudiopitch #$r 2**(7/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\naudioputmix #$ #$r\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "hollys g major": {
+    "code": "grayscale #\nhuecurvergba # red 0 1 0 1\nhuecurvergba # green 0.5 1 0.75 1\nhuecurvergba # blue 1 1 1 1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\ncopy #$ #$r\ncopy #$ #$s\naudiopitch #$ 2**(-17/12)\naudiopitch #$p 2**(-5/12)\naudiopitch #$r 2**(2/12)\naudiopitch #$s 2**(5/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\naudioputmix #$ #$r\nvolume #$\naudioputmix #$ #$s\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 74 hsv": {
+    "code": "invert #\nhueshifthsv # 180\nexplode # 0.5\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(2/12)\naudiopitch #$p 2**(9/12)\naudiopitch #$q 2**(-10/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "cry x": {
+    "code": "get # width w\nget # height h\ninvert #\nhueshifthsv # 70\nwave # h/10 w/2\ncover # w h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-4.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "opposite rotation wave": {
+    "code": "foreachframe # 0 #fc \"rotate #x (-180*(idx/#fc)) none true\"\nrotate # 90\nwave # 0h/9 0w/1.75\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(4/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "mirror and other": {
+    "code": "copy # #c\nflop #c\noverlay # #c 0 0 none 0.01 0 true 50\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-8/12)\naudiopitch #$p 2**(-7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "opposite crazy slow killed": {
+    "code": "hueshifthsv # -65\nimplode # 0.5\nrotate # 90\nwave # -0h/8 0w/3.6\nrotate # -90\ncover # 0w 0h\nwave # 0h/12 0w/2\ncover # 0w 0h\nspeed # 3.33333333333333333333\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-6/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "opposite crazy slow killed no speed": {
+    "code": "hueshifthsv # -65\nimplode # 0.5\nrotate # 90\nwave # -0h/8 0w/3.6\nrotate # -90\ncover # 0w 0h\nwave # 0h/12 0w/2\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-6/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "opposite ripple pitch": {
+    "code": "hueshifthsv # 90\ndetunnel #\nwiggle # left 30 4\ntunnel #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(6/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "opposite mirror twirls": {
+    "code": "waaw #\nforeachframe # 0 #fc \"swirl #x (-90*(idx/#fc))\"\naudiopitch # 2**(8/12)\nbitrate # 0 32000",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "opposite cold major": {
+    "code": "grayscale #\nhuecurvergba # red 0 0 0 0\nhuecurvergba # green 0.5 0 0 0\nhuecurvergba # blue 0.5 0.2 0.7 1\ninvert #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(2/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "a major": {
+    "code": "invert #\nhueshifthsv # 153\nwaaw #\nswirl # 130\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(5.73/12)\naudiopitch #$p 2**(10.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1373930586049347596>"
+  },
+  "lebs g major 17": {
+    "code": "hueshifthsvffmpeg # 10 1.5\nswaprgba # bgr\ncontrast # -1\nflop #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(3/12)\naudioputmix #$ #$p\nvolume #$ 5\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 49": {
+    "code": "haah #\nhooh #\nhueshifthsv # 126\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(0/12)\ncopy #$ #$p\naudiopitch #$p 2**(-0.69/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration # #$d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "greeny confusion": {
+    "code": "waaw #\nswaprgba # bgr\nhueshifthsv # -136 100\nrotate # 90\nwave # 0h/15 0w/6\nrotate # -90\ncover # 0w 0h\nwave # -0h/18 0w/6\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\nreverse #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "purple blues custom major 75": {
+    "code": "invert #\nhueshifthsvffmpeg # -60\nswaprgba # bgr\nflop #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-0.2/12)\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(0.1/12)\naudiopitch #$q 2**(0.2/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration # #$d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "split 3 pitches": {
+    "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$ 2**({arg:1}/12)\naudiopitch #$0 2**({arg:2}/12)\naudiopitch #$1 2**({arg:3}/12)\naudioputmix #$ #$0\nvolume #$\naudioputmix #$ #$1\nvolume #$\nrepeatduration # #$d\naudioputreplace # #$",
+    "args": 3,
+    "params": [
+      "{arg:1}",
+      "{arg:2}",
+      "{arg:3}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "g major 100": {
+    "code": "haah #\nswaprgba # bgr\nhueshifthsvffmpeg # 84 2\nrotate # 90\nwave # 0h/16 0w/3.6\nrotate # -90\ncover # 0w 0h\nwave # -0h/24 0w/2\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$2\naudiopitch #$ 2**(-1/12)\naudiopitch #$2 2**(-5/12)\naudioputmix #$ #$2\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "lebs g major 156": {
+    "code": "dobetween # 0 #d/2 \"hueshifthsv #x 180\\nswaprgba #x bgr\\nsnip # #d/2\\nrepeat #\\nreverse #\\nhueshifthsv # 180\\ncopy #x #$x\\nconvert #$x audio/wav\\ncopy #$x #$$x\\naudiopitch #$x 2**(0.5/12)\\naudiopitch #$$x 2**(4.5/12)\\naudioputmix #$x #$$x\\nvolume #$x\\naudioputreplace #x #$x\\ncopy # #$\\nconvert #$ audio/wav\\ncopy #$ #$$\\naudiopitch #$ 2**(-0.5/12)\\naudiopitch #$$ 2**(-4.5/12)\\naudioputmix #$ #$$\\nvolume #$\\naudioputreplace # #$\"",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 17": {
+    "code": "hueshifthsv # -140\nhaah #\nexplode #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(3/12)\naudioputmix #$ #$p\nvolume #$ 4\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor 17": {
+    "code": "hueshifthsv # 140\nwaaw #\nimplode # 0.5\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-3/12)\naudioputmix #$ #$p\nvolume #$ 4\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor 1": {
+    "code": "contrast # -1\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-8/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 26": {
+    "code": "huecurvergba # all 0 0.6 1\nhuecurvergba # all 0,0 0.5,0 0.502,1 1,1\nhueshifthsv # 180\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(4/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 445": {
+    "code": "invert #\nhueshifthsv # 180\nflop #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-12/12)\naudiopitch #$ 2**(-24/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "add source": {
+    "code": "volume # 0\nload {arg:1} s\nrepeatduration s 0d\nsnip s 0 0d\nresize s 0w/{arg:2} 0h/{arg:2}\noverlay # s (0w/{arg:2})*{arg:3} (0h/{arg:2})*{arg:4}\nvolume #",
+    "args": 4,
+    "params": [
+      "{arg:1}",
+      "{arg:2}",
+      "{arg:3}",
+      "{arg:4}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "last export": {
+    "code": "reverse #\nsnip # 0 {arg:1}\nreverse #",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "pizza pizza effect": {
+    "code": "huecurvergba # all 0,0 0.5,0 0.502,1 1,1\ninvert #\nhueshifthsv # 60\ndetunnel #\nwiggle # right 30 4\ntunnel #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-4.5/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "preview 1280": {
+    "code": "set start {arg0:1}\nset end {arg:2} \nsetfps # 30\nget # duration vidlen\nrepeatduration # start+end\ncopy # 1\nsnip 1 start start+end\ncopy 1 2\nhueshifthsv 2 50 \naudiopitch 2 1.059\ncopy 1 3\nhueshifthsv 3 180\nwaaw 3\nrotate 3 -90\nwaves 3 0w/60 0w/4 6\nflop 3\nwaves 3 0w/70 0w/6 4\nflop 3\nwaves 3 0w/110 0w/12 6\nflop 3 \nwaves 3 0w/100 0w/4 7\nwaves 3 0w/200 0w/20 3\nflop 3\nwaves 3 0w/250 0w/1 5\nrotate 3 90\nrotate 3 90\nwaves 3 0w/300 0w/2 10\nrotate 3 -90\ncover 3 0w 0h\naudiopitch 3 2**(-2/12)\nsnip 3 0 end\ncopy 1 4\nhueshifthsv 4 50 \naudiopitch 4 2**(1/12)\ncopy 1 5\nsnip 5 0 end/2\ncopy 5 8\ncopy 5 9\ncopy 5 6 \nhueshifthsv 6 25\nflop 6\naudiopitch 6 2**(2/12)\nconcat 5 6\nsnip 5 0 end\ncopy 5 7\nhueshifthsv 7 50 \naudiopitch 7 2**(1/12)\nsnip 7 0 end\nhueshifthsv 8 180\naudiopitch 8 2**(-2/12)\nsnip 8 0 end/2\nflop 9\nconcat 5 7\nconcat 8 9\nconcat 5 8\nconcat 5 7\nconcat 1 2\nconcat 1 3\nconcat 1 4\nconcat 1 5",
+    "args": 2,
+    "params": [
+      "{arg:1}",
+      "{arg:2}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "g major 10": {
+    "code": "haah #\ninvert #\nhueshifthsv # 180\nswaprgba # bgr\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\ncopy #$ #$d\ncopy #$ #$e\naudiopitch #$ 2**(12/12)\naudiopitch #$a 2**(7/12)\naudiopitch #$b 2**(4/12)\naudiopitch #$d 2**(-5/12)\naudiopitch #$e 2**(-12/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\naudioputmix #$ #$d\nvolume #$\naudioputmix #$ #$e\nvolume #$\ncopy #$ #$$\naudiopitch #$$ 2**(-1/12)\naudioputmix #$ #$$\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 11": {
+    "code": "waaw #\ninvert #\ngrayscale #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(2/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 12": {
+    "code": "create bg #w #h 0 0 0\noverlay bg # 0 0 white 0.1 0.5\noverlay # bg\nhueshifthsv # -50 100\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\ncopy #$ #$d\ncopy #$ #$e\naudiopitch #$ 2**(12/12)\naudiopitch #$a 2**(7/12)\naudiopitch #$b 2**(4/12)\naudiopitch #$d 2**(-5/12)\naudiopitch #$e 2**(-12/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\naudioputmix #$ #$d\nvolume #$\naudioputmix #$ #$e\nvolume #$\naudiopitch #$ 2**(3/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 13": {
+    "code": "create bg #w #h 0 0 0\noverlay bg # 0 0 white 0.1 0.5\noverlay # bg\nswaprgba # bgr\nhueshifthsv # 0 100\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\ncopy #$ #$d\naudiopitch #$a 2**(3/12)\naudiopitch #$b 2**(6/12)\naudiopitch #$c 2**(9/12)\naudiopitch #$d 2**(12/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\naudioputmix #$ #$d\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 14": {
+    "code": "haah #\nwoow #\ninvert #\ngrayscale #\nswaprgba # 00b\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2**(-12/12)\naudiopitch #$q 2**(12/12)\naudiopitch #$q 2**(4/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "old g major 100": {
+    "code": "copy # #2\nhueshifthsv # -50\nhueshifthsv #2 180\nflop #2\ncrop # 0w/2 0h\ncrop #2 0w/2 0h 0w\njoin # #2\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-1/12)\naudiopitch #$p 2**(-5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 21": {
+    "code": "invert #\nhueshifthsv # 20 100\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\naudiopitch #$ 2**(-3/12)\naudiopitch #$b 2**(2/12)\naudiopitch #$c 2**(4/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 42": {
+    "code": "swaprgba # bgr\ncontrast # -1\nhueshifthsv # 180\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\naudiopitch #$ 2**(-3/12)\naudiopitch #$b 2**(4/12)\naudiopitch #$c 2**(7/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "bv pitch": {
+    "code": "copy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(({arg:1}/100)/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "ovb pitch": {
+    "code": "copy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(({arg:1}*0.12)/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "ccs hue": {
+    "code": "hueshifthsvffmpeg # {arg:1}",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "hsl hue": {
+    "code": "hueshifthsv # {arg:1}",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "audio reverse": {
+    "code": "copy # #$\nconvert #$ audio/wav \nreverse #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "video reverse": {
+    "code": "copy # #$\nconvert #$ audio/wav \nreverse #\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "invert hue": {
+    "code": "hueshifthsv # 180",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "invert ccs hue": {
+    "code": "hueshifthsvffmpeg # 180",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "rgb to bgr": {
+    "code": "swaprgba # bgr",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 305": {
+    "code": "hueshifthsv # -120\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-7/12)\naudiopitch #$p 2**(12/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "custom major 3": {
+    "code": "hueshifthsv # 165\nhaah #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(0.1/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "klaskygunners x major 159": {
+    "code": "invert #\nhueshifthsvffmpeg # 120\nwoow #\nrotate # 90\nwaves # 0h/16 0w/3.6 4\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "chippys lagging x major 159": {
+    "code": "waves # 0h/8 0w/2 5\ncover # 0w 0h\ndistort # scale_rotate_translate -90\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "hollys x major 159": {
+    "code": "flop #\nhueshifthsvffmpeg # 180\nhueshifthsv # 180\nswaprgba # bgr\nslide # 1 up\nexplode #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\ncopy #$ #$q\naudiopitch #$q 2**(0.05/12)\naudioputmix #$ #$q\nvolume #$\nreverse #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "chippys auuuuuh effect": {
+    "code": "spin # no no yes\nswirl # -120\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nreverse #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "braxtons g major 94": {
+    "code": "contrast # -1\nhaah #\nswirl # 40\nexplode # 0.5\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-4.5/12)\naudiopitch #$p 2**(5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "chippys g major 74": {
+    "code": "explode #\ndetunnel #\nwiggle # right 25 3\ntunnel #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$ 2**(2/12)\naudiopitch #$0 2**(-3/12)\naudiopitch #$1 2**(-22/12)\naudioputmix #$ #$0\nvolume #$\naudioputmix #$ #$1\nvolume #$\nrepeatduration # #$d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "braxtons g major 28": {
+    "code": "hueshifthsv # 55\nflop #\nswirl # -70\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-7/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "half luig group": {
+    "code": "hueshifthsv # -25\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-0.5/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "half mari group": {
+    "code": "hueshifthsv # 25\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(0.5/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "high major": {
+    "code": "hueshifthsv # 120\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(3/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "invert": {
+    "code": "invert #",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "invert luminosity": {
+    "code": "contrast # -1",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "spinslide": {
+    "code": "spin # yes no yes \nslide # 1 left",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 404": {
+    "code": "invert #\ncreate bg #w #h 0 0 0\noverlay bg # 0 0 white 0.1 0.5\noverlay # bg\nhueshifthsv # 150 100\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(-4/12)\naudiopitch #$q 2**(4/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 3": {
+    "code": "grayscale #\nlighten # 25\nswaprgba # r00\nrotate # -90\nwaves # 0w/30 0w/4 6\nflop #\nwaves # 0w/35 0w/6 4\nflop #\nwaves # 0w/55 0w/12 6\nflop #\nwaves # 0w/50 0w/4 7\nwaves # 0w/100 0w/20 3\nflop #\nwaves # 0w/125 0w/1 5\nrotate # 90\nrotate # 90\nwaves # 0w/150 0w/2 10\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-6/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "devils blast": {
+    "code": "grayscale #\nlighten # 25\nswaprgba # r00\nrotate # -90\nwaves # 0w/60 0w/4 6\nflop #\nwaves # 0w/70 0w/6 4\nflop #\nwaves # 0w/110 0w/12 6\nflop #\nwaves # 0w/100 0w/4 7\nwaves # 0w/200 0w/20 3\nflop #\nwaves # 0w/250 0w/1 5\nrotate # 90\nrotate # 90\nwaves # 0w/300 0w/2 10\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(-12/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 44 v2": {
+    "code": "swaprgba # bgr\nhueshifthsv # 90\nrotate # -90\nwaves # 0w/30 0w/4 6\nflop #\nwaves # 0w/35 0w/6 4\nflop #\nwaves # 0w/55 0w/12 6\nflop #\nwaves # 0w/50 0w/4 7\nwaves # 0w/100 0w/20 3\nflop #\nwaves # 0w/125 0w/1 5\nrotate # 90\nrotate # 90\nwaves # 0w/150 0w/2 10\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-12/12)\naudioputmix #$ #$p\nvolume #$\ncopy #$ #$q\naudiopitch #$q 2**(0.3/12)\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "theuser10s g major 5": {
+    "code": "copy # #2\nif 0 == 0 \"crop # 0w/2 0h 0 0\\\\nhueshifthsv #2 180\\\\nrotate #2 -90\\\\nwaves #2 0w/60 0w/4 6\\\\nflop #2\\\\nwaves #2 0w/70 0w/6 4\\\\nflop #2\\\\nwaves #2 0w/110 0w/12 6\\\\nflop #2\\\\nwaves #2 0w/100 0w/4 7\\\\nwaves #2 0w/200 0w/20 3\\\\nflop #2\\\\nwaves #2 0w/250 0w/1 5\\\\nrotate #2 90\\\\nrotate #2 90\\\\nwaves #2 0w/300 0w/2 10\\\\nrotate #2 -90\\\\ncover #2 0w 0h\\\\ncrop #2 0w/2 0h 0w 0\"\njoin # #2\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-2.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g minor 25": {
+    "code": "hueshifthsv # 50\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(1/12)\naudiopitch #$p 2**(8/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 45": {
+    "code": "hueshifthsv # -50\ninvert #\ncreate bg #w #h 0 0 0\noverlay bg # 0 0 white 0.1 0.5\noverlay # bg\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(2/12)\naudiopitch #$p 2**(6/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 46": {
+    "code": "invert #\nhueshifthsv # 72\nhaah #\nwaves # #h/18 #w/4.5 5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(10/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 47": {
+    "code": "haah #\nwoow #\ninvert #\ngrayscale #\nswaprgba # rg0\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(-2/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 48": {
+    "code": "hueshifthsv # -140\nswirl # -180\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(3/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 50": {
+    "code": "contrast # -1\nswaprgba # bgr\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(6/12)\naudiopitch #$p 2**(9/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 52": {
+    "code": "invert #\nhueshifthsv # 50\nexplode # 0.5\nslide # 1 up\nrotate # -90\nwaves # 0w/120 0w/4 6\nflop #\nwaves # 0w/140 0w/6 4\nflop #\nwaves # 0w/220 0w/12 6\nflop #\nwaves # 0w/200 0w/4 7\nwaves # 0w/400 0w/20 3\nflop #\nwaves # 0w/500 0w/1 5\nrotate # 90\nrotate # 90\nwaves # 0w/600 0w/2 10\nrotate # -90\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(0.39/12)\naudiopitch #$p 2**(7.49/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "stammer": {
+    "code": "load {arg:1} #$\nstammer # #$",
+    "args": 1,
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "g major 136": {
+    "code": "invert #\nhueshifthsv # -140\nswaprgba # bgr\nwave # -#h/12 #w/2.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "conga busher": {
+    "code": "waaw #\nhueshifthsvffmpeg # -140\ncopy # #$\nconvert #$ audio/wav\naudiovibrato #$ 5000 0.08\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "tstve2763s g major": {
+    "code": "copy # #2\ninvert #2\ncrop # 0w/2 0h\ncrop #2 0w/2 0h 0w\njoin # #2\nswirl # 100\ncopy # #3\ninvert #3\ncrop # 0w/2 0h\ncrop #3 0w/2 0h 0w\njoin # #3\nhueshifthsv # -90\nflop #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\naudiopitch #$ 2**(-7.5/12)\naudiopitch #$a 2**(4.5/12)\naudiopitch #$b 2**(12/12)\naudiopitch #$b 2**(0.5/12)\naudiopitch #$c 2**(12/12)\naudiopitch #$c 2**(4.5/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 53": {
+    "code": "hueshifthsv # 95.4\nswirl # -100\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(3.59/12)\naudiopitch #$p 2**(5.39/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 54": {
+    "code": "grayscale #\nhuecurvergba # red 1 1 0\nhuecurvergba # green 1 0 0\nhuecurvergba # blue 1 0 0\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2**(5/12)\naudiopitch #$p 2**(10/12)\naudiopitch #$q 2**(12/12)\naudiopitch #$q 2**(2.19/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 55": {
+    "code": "haah #\nswaprgba # bgr\nhueshifthsv # -97.2\nwave # -#h/12 #w/2.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(9/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 200": {
+    "code": "haah #\nhueshifthsv # 60\nwave # #h/12 #w/2.1\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$p 2**(-3/12)\naudiopitch #$q 2**(-7/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "mikes g major 36": {
+    "code": "haah #\nhueshifthsv # 40\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-5/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "heat overload": {
+    "code": "grayscale #\nhuecurvergba # red 0.25 1 0 0 0 0.4 \nhuecurvergba # green 0 0 0 1 1 1 0.5\nhuecurvergba # blue 0.2 0.85 1 1 0 0.1\ncopy # #$\nconvert #$ audio/wav\naudioboostbass #$audioboostbass #$\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1373930586049347596>"
+  },
+  "reimu major": {
+    "code": "grayscale # \nhuecurvergba # red 1 0.9490196078431372 0.788235294117647 0.8 0.9098039215686274 0.8 0.17647058823529413\nhuecurvergba # green 1 0.9215686274509803 0.26666666666666666 0.25882352941176473 0.7803921568627451 0.25882352941176473 0.18823529411764706\nhuecurvergba # blue 1 0.8509803921568627 0.2627450980392157 0.2549019607843137 0.3686274509803922 0.2549019607843137 0.2196078431372549\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\naudiopitch #$0 0.5\naudiopitch #$1 1.4983\naudiopitch #$2 2\naudiopitch #$2 1.1225\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "thebestbloodyplayerfans major": {
+    "code": "grayscale #\nhuecurvergba # red 0.25 0.98 1 0.55 0.36\nhuecurvergba # green 1 0.5 0\nhuecurvergba # blue 0.1 0.31 0.1\ncopy # #2\ncopy # #3\naudiopitch # 2**(-7/12)\naudiopitch #2 2**(3/12)\naudiopitch #3 2**(8/12)\naudioputmix # #2\naudioputmix # #3",
+    "args": "0",
+    "params": [],
+    "author": "<@1261690719924523151>"
+  },
+  "alextrongnhan major": {
+    "code": "grayscale #\nhuecurvergba # red 0 0 1 0\nhuecurvergba # green 0 0.59 0.98 1 0\ninvertrgba # 0 1 0\nswaprgba # bgra\nhueshiftrgb # -255\ninvert #\nhueshifthsv # 180\nhueshiftrgb # 0 255 0",
+    "args": "0",
+    "params": [],
+    "author": "<@1261690719924523151>"
+  },
+  "marisa major": {
+    "code": "zoomblur # 1.1\ngrayscale #\nhuecurvergba # red 1 1 1 0.8666666666666667 0 1 1 0 1\nhuecurvergba # green 1 1 1 0.7372549019607844 0 0.7490196078431373 1 0 1\nhuecurvergba # blue 1 1 0 0.6274509803921569 0 1 1 0 1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\naudiopitch #$0 2(-4/12)\naudiopitch #$1 2(-7/12)\naudiopitch #$2 2**(-11/12)\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "g major 137": {
+    "code": "contrast # -1\nswaprgba # bgr\nexplode # 0.5\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(2/12)\naudiopitch #$p 2**(9/12)\naudiopitch #$q 2**(-10/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 400": {
+    "code": "swaprgba # bgr\nhueshifthsv # 105.84\nwaves # 0w/60 0w/4 6\nflop #\nwaves # 0w/70 0w/6 4\nflop #\nwaves # 0w/110 0w/12 6\nflop #\nwaves # 0w/100 0w/4 7\nwaves # 0w/200 0w/20 3\nflop #\nwaves # 0w/250 0w/1 5\nrotate # 90\nrotate # 90\nwaves # 0w/300 0w/2 10\nrotate # 180\ncover # 0w 0h\nzoom # 2\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(1/12)\naudiopitch #$p 2**(-5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 116": {
+    "code": "create bg #w #h 0 0 255\noverlay bg # 0 0 white 0.1 0.5\noverlay # bg\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2**(12/12)\naudiopitch #$p 2**(12/12)\naudiopitch #$p 2**(5/12)\naudiopitch #$q 2**(12/12)\naudiopitch #$q 2**(12/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "are you sure x is in g major": {
+    "code": "hueshifthsv # -76\nflop #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$a\ncopy #$ #$b\ncopy #$ #$c\ncopy #$ #$d\ncopy #$ #$e\naudiopitch #$ 2**(12/12)\naudiopitch #$a 2**(7/12)\naudiopitch #$b 2**(4/12)\naudiopitch #$d 2**(-5/12)\naudiopitch #$e 2**(-12/12)\naudioputmix #$ #$a\nvolume #$\naudioputmix #$ #$b\nvolume #$\naudioputmix #$ #$c\nvolume #$\naudioputmix #$ #$d\nvolume #$\naudioputmix #$ #$e\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "respondview 2": {
+    "code": "set start {arg:1}\nset end {arg:2}\nget # duration vidlen\nrepeatduration # start+end\nsnip # start start+end\ncopy # #2\nhueshifthsv # -50\nswirl # 90\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-12/12)\naudiopitch #$p 2**(-24/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ 0d\naudioputreplace # #$\nhueshifthsv #2 -50\nswirl #2 -90\ncopy #2 #2$\nconvert #2$ audio/wav\ncopy #2$ #2$p\naudiopitch #2$p 2**(-12/12)\naudioputmix #2$ #2$p\nvolume #2$\nrepeatduration #2$ 0d\naudioputreplace #2 #2$\nconcat # #2\ncopy # #plus\ncopy # #minus\naudiopitch #plus 2**(1/12)\naudiopitch #minus 2**(-2/12)\ncopy #plus #plus2\nconcatmultiple # #plus #minus #plus2",
+    "args": "2",
+    "params": [
+      "{arg:1}",
+      "{arg:2}"
+    ],
+    "author": "<@860712797045784588>"
+  },
+  "playstationfan404 major": {
+    "code": "grayscale #\nhuecurvergba # red 0.5098039215686274 0 0 0 0.2823529411764706 0.4549019607843137\nhuecurvergba # green 0.5137254901960784 0 1 0 0.49019607843137253 0.7568627450980392\nhuecurvergba # blue 1 1 1 1 0.8666666666666667 1\nhuecurvergba # alpha 1 1 1 1 1 1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\naudiopitch #$0 2**(-1/12)\naudiopitch #$1 2**(2/12)\naudiopitch #$2 2**(0/12)\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1399059977691467877>"
+  },
+  "doki major": {
+    "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\ncopy #$ #$3\ncopy #$ #$4\naudiopitch #$0 2**(+9/12)\naudiopitch #$1 2**(+3/12)\naudiopitch #$2 2**(-3/12)\naudiopitch #$3 2**(-9/12)\naudiopitch #$4 2**(+15/12)\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\naudioputmix #$0 #$3\nvolume #$0\naudioputmix #$0 #$4\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1399059977691467877>"
+  },
+  "fake g major": {
+    "code": "invert #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(0/12)\naudiopitch #$1 2**(+12/12)\naudioputmix #$0 #$1\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "g major 300": {
+    "code": "flop #\ninvertrgba # 1 1 0\nhueshifthsv # -50.4\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-2/12)\naudiopitch #$p 2**(2/12)\naudioputmix #$ #$p\nvolume #$\ncopy #$ #$q\naudiopitch #$q 2**(-12/12)\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 634": {
+    "code": "contrast # -1\nhueshifthsv # 180\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(12/12)\naudiopitch #$ 2**(10/12)\naudiopitch #$p 2**(-16/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 2763": {
+    "code": "grayscale #\nhuecurvergba # red 0 1 1 1 0 0 \nhuecurvergba # green 0 1 0 0 0 1 \nhuecurvergba # blue 0 0 0 1 1 1\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2**(0/12)\naudiopitch #$p 2**(-5/12)\naudiopitch #$q 2**(8/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "dual gradient map": {
+    "code": "grayscale #\nhuecurvergba # red {arg:1}/255 {arg:4}/255 \nhuecurvergba # green {arg:2}/255 {arg:5}/255\nhuecurvergba # blue {arg:3}/255 {arg:6}/255",
+    "args": "6",
+    "params": [
+      "{arg:1}",
+      "{arg:2}",
+      "{arg:3}",
+      "{arg:4}",
+      "{arg:5}",
+      "{arg:6}"
+    ],
+    "author": "<@1005205558497906839>"
+  },
+  "triple gradient map": {
+    "code": "grayscale #\nhuecurvergba # red {arg:1}/255 {arg:4}/255 {arg:7}/255\nhuecurvergba # green {arg:2}/255 {arg:5}/255 {arg:8}/255\nhuecurvergba # blue {arg:3}/255 {arg:6}/255 {arg:9}/255",
+    "args": "6",
+    "params": [
+      "{arg:1}",
+      "{arg:2}",
+      "{arg:3}",
+      "{arg:4}",
+      "{arg:5}",
+      "{arg:6}"
+    ],
+    "author": "<@1005205558497906839>"
+  },
+  "x minor 159": {
+    "code": "grayscale #\nhuecurvergba # red 1 1 0\nhuecurvergba # green 1 0 0\nhuecurvergba # blue 1 1 0\nhueshifthsv # 180\ncopy #$ #$q\nconvert #$ audio/wav\ncopy #$ #$q\naudiopitch #$ 2**(7/12)\naudiopitch #$q 2**(-5/12)\naudioputmix #$ #$q\nrepeatduration #$ #d\nvolume #$ 2\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1364445041266921522>"
+  },
+  "split morning night": {
+    "code": "copy # #$\nget # width #w\nget # height #h\nwoow #$\nhaah #$\naudiopitch #$ 0.264\ncrop # #w/2 #h 0 0\ncrop #$ #w/2 #h #w 0\njoin # #$\nvolume # 2.275",
+    "args": "0",
+    "params": [],
+    "author": "<@1402588813490130955>"
+  },
+  "g major 282": {
+    "code": "swaprgba # bgr\nwaaw #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\ncopy #$ #$3\naudiopitch #$0 2**(1/12)\naudiopitch #$1 2**(3/12)\naudiopitch #$2 2**(-6/12)\naudiopitch #$3 2**(-2/12)\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\naudioputmix #$0 #$3\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "pyramixed x": {
+    "code": "waaw #\nhueshifthsv # 180\nimplode # 0.25\ncopy # #$\naudiopitch # 1.189207115002721066717499970560475915292972092463817413019002225\naudiopitch #$ 0.7937005259840997373758528196361541301957466639499265049041428809\naudioputmix # #$\nvolume #",
+    "args": "0",
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "bpitch": {
+    "code": "copy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**({arg:1}/100/12) \nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "1",
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@1397206544743141387>"
+  },
+  "tunnel": {
+    "code": "tunnel #",
+    "args": "0",
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "22-dxi": {
+    "code": "swaprgba # bgr\ncontrast # 1.8\nhuecurvergba # all 0 0.2 0.8 1\ncreate bg #w #h 60 0 0\noverlay bg # 0 0 black 0.1 0.3\noverlay # bg\nshake # 0 10 true\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-12/12)\naudiopitch #$ 2**(-7/12)\naudiopitch #$p 2**(12/12)\naudiopitch #$p 2**(7/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "iaskd": {
+    "code": "hueshifthsvffmpeg # 260\nswaprgba # bgra\nhueshifthsvffmpeg # 260\nswaprgba # bgra\nswirl # 5\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 0.994\naudiopitch #$p 1.006\naudioputmix #$ #$p\nvolume #$ 2\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "braxtons g major 65": {
+    "code": "invert #\nhueshifthsv # 70 100\nhueshifthsv # 180\nshake # 0 10 true\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-3.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "braxtons g major 97": {
+    "code": "invert #\nhueshifthsv # 70 100\nswaprgba # bgra\nshake # 0 10 true\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-3.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "braxtons new g major 97": {
+    "code": "hooh #\nflop #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-3.5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "vee major": {
+    "code": "grayscale #\nhuecurvergba # red 0.2 0 0.5 1 0\nhuecurvergba # green 0.2 1 1 1 0\nhuecurvergba # blue 0.2 0 0.5 1 0\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 1.189\naudiopitch #$p 0.891\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$\naudiovibrato # 6000 0.052",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "iactm major": {
+    "code": "hueshifthsvffmpeg # -4\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 0.8169577266205499218391220252060422602883434059337872339941633584\naudiopitch #$p 1.224053543304655239132160216826038822387456572683921807769391741\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "melc melc codobelc major": {
+    "code": "swaprgba # bgr\nhueshifthsv # -40\nhaah #\ncopy # #$\nconvert #$ audio/wav\ncopy#$ #$p\naudiopitch #$ 2**(-12/12)\naudiopitch #$p 2**(3/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "x major 571": {
+    "code": "distort # scale_rotate_translate -0.5\nhaah #\ninvert #\nhueshifthsv # 7.5\ncopy # #$\nconvert #$ audio/wav\nreverse #$\ncopy #$ #$p\naudiopitch #$p 2**(-0.1/12)\naudioputmix #$ #$p\nvolume #$ 2\nrepeatduration #$ #d\naudioputreplace # #2",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "depolar": {
+    "code": "distort # depolar",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "polar": {
+    "code": "distort # polar",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "custom major 333": {
+    "code": "invert #\ndistort # scale_rotate_translate -1\nsharpen # 3\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-0.1/12)\naudioputmix #$ #$p\nrepeatduration #$ #d\naudioputreplace # #$\nvolume #",
+    "args": 0,
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "chippy-dxi": {
+    "code": "swaprgba # bgr\nhueshifthsv # 155\nrotate # 90\nwave # 0h/15 0w/4\nrotate # -90\nforeachframe # 0 #fc ",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "169-dxi": {
+    "code": "hueshifthsv # 180\ninvert #\nhuecurvergba # all 0 0.2 0.8 1\ninvert #\ncreate bg #w #h 255 183 0\noverlay bg # 0 0 black 0.1 0.3\noverlay # bg\nshake # 0 10 true\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-16.9/12)\naudiopitch #$p 2**(12/12)\naudiopitch #$p 2**(4.9/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": 0,
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 35": {
+    "code": "slide # 1 up\ncopy # #$\nconvert #$ audio/wav\nget # width #ww \nget # height #hh\nrotate # -90\nwaves # #ww/30 #hh/4 6\nflop #\nwaves # #ww/35 #ww/6 4\nflop #\nwaves # #ww/55 #ww/12 6\nflop # \nwaves # #ww/50 #ww/4 7\nwaves # #ww/100 #ww/20 3\nflop #\nwaves # #ww/125 #ww/1 5\nrotate # 90\nrotate # 90\nwaves # #ww/150 #ww/2 10\nrotate # -90\ncover # #ww #hh\ninvert #\ncopy # #m\ninvert #m\ngrayscale #m\nhuecurvergba #m red 1 0.5 0 0\nhuecurvergba #m green 0 0.5 0 0\nhuecurvergba #m blue 0 0.5 0.5 1\noverlay # #m 0 0 #808080 0.3 0.2\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\ncopy #$ #$r\naudiopitch #$p 1.335\naudiopitch #$q 0.75\naudiopitch #$r 0.5612\naudioputmix # #$q\nvolume #\naudioputmix # #$q\nvolume #\naudioputmix # #$r\nvolume #\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "g major 96": {
+    "code": "contrast # -1\nexplode # 0.5\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\ncopy #$ #$q\naudiopitch #$ 2(12/12)\naudiopitch #$ 2(2/12)\naudiopitch #$p 2(9/12)\naudiopitch #$q 2(-10/12)\naudioputmix #$ #$p\nvolume #$\naudioputmix #$ #$q\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$\nhueshifthsvffmpeg # 180\nhaah #\nspeed # 0.75\naudiopitch # 0.75",
+    "args": "0",
+    "params": [],
+    "author": "<@1348704647262502912>"
+  },
+  "85688-major": {
+    "code": "hueshifthsv # 14\nhaah #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 1 \naudiopitch #$p 1.005 \naudioputmix #$ #$p\nvolume #$ 2\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1329942463506546709>"
+  },
+  "low minor": {
+    "code": "hueshifthsv # 216\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 0.84\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "g major 105": {
+    "code": "hueshifthsv # 216\nwoow #\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 0.84\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "alphabets g major 181": {
+    "code": "contrast # -1\nwaaw #\nswirl # -130\nwaaw #\nswirl # -50\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$2\ncopy #$ #$3\naudiopitch #$ 0.59999999\naudiopitch #$2 1.4983070768769999\naudiopitch #$3 2\naudioputmix #$ #$2\naudioputmix #$ #$3\naudiopitch #$ 1.022462048309999\nvolume #$ 5\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1142762166726959194>"
+  },
+  "ecn major": {
+    "code": "grayscale #\nhuecurvergba # red 0.2 1 1 1 0\nhuecurvergba # green\nhuecurvergba # blue\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 0.17\naudiopitch #$p 2.0\naudioputmix #$ #$p\nvolume #$\naudiovibrato #$ 6000 0.05\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1193305836513132684>"
+  },
+  "g major 113": {
+    "code": "hueshifthsv # 180\ninvert #\ncontrast # -1\ninvert #\nmirrorbottom #\nmirrorleft #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$2\ncopy #$ #$3\ncopy #$ #$4\ncopy #$ #$5\ncopy #$ #$6\ncopy #$ #$7\ncopy #$ #$8\naudiopitch #$ 0.5\naudiopitch #$ 0.75\naudiopitch #$2 0.5\naudiopitch #$3 0.66\naudiopitch #$5 1.32\naudiopitch #$6 2\naudiopitch #$7 2\naudiopitch #$7 1.32\naudiopitch #$8 2\naudiopitch #$8 2\naudioputmix #$ #$2\nvolume #$ 2\naudioputmix #$ #$3\nvolume #$ 2\naudioputmix #$ #$4\nvolume #$ 2\naudioputmix #$ #$5\nvolume #$ 2\naudioputmix #$ #$6\nvolume #$ 2\naudioputmix #$ #$7\nvolume #$ 2\naudioputmix #$ #$8\nvolume #$ 2\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "tv-simulator": {
+    "code": "copy # #$\nconvert #$ audio/wav\nget # width w \nget # height h\nrotate # -90\nwaves # w/60 w/4 6\nflop #\nwaves # w/70 w/6 4\nflop #\nwaves # w/110 w/12 6\nflop # \nwaves # w/100 w/4 7\nwaves # w/200 w/20 3\nflop #\nwaves # w/250 w/1 5\nrotate # 90\nrotate # 90\nwaves # w/300 w/2 10\nrotate # -90\ncover # w h\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1264800797292756992>"
+  },
+  "g major 9283": {
+    "code": "swirl # -150\ncopy # #$\nconvert #$ audio/wav\nslide # 1 up\nget # width w \nget # height h\nrotate # -90\nwaves # w/60 w/4 6\nflop #\nwaves # w/70 w/6 4\nflop #\nwaves # w/110 w/12 6\nflop # \nwaves # w/100 w/4 7\nwaves # w/200 w/20 3\nflop #\nwaves # w/250 w/1 5\nrotate # 90\nrotate # 90\nwaves # w/300 w/2 10\nrotate # -90\ncover # w h\nswirl # 150\nhueshifthsv # 252.36\ngrayscale #\nhuecurvergba # red 0.88235294117647058 0 0\nhuecurvergba # green 0.555555555555556 0 0\nhuecurvergba # blue 0 0 0\nhuecurvergba # alpha 1 0 0\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\naudiopitch #$0 2**(4/12)\naudiopitch #$1 2**(7/12)\naudiopitch #$2 2**(12/12)\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1172709345654493284>"
+  },
+  "bad apple": {
+    "code": "set start {arg:1}\nload https://media.discordapp.net/attachments/1124758334805909509/1406488044684709909/youtube-FtutLA63Cp8.mp4?ex=68a2a591&is=68a15411&hm=0467715784b95181feefe9b42b219c80182631f002137ec380fd1aa59d3c0380& #o\nsnip #o start #d+start\ndistort #o resize #w #h\noverlay # #o 0 0 {arg:2}",
+    "args": "2",
+    "params": [
+      "{arg:1}",
+      "{arg:2}"
+    ],
+    "author": "<@1005205558497906839>"
+  },
+  "great filter": {
+    "code": "grayscale #\ndeepfry #",
+    "args": "0",
+    "params": [],
+    "author": "<@1138645711529979985>"
+  },
+  "braxtons g major 46": {
+    "code": "hueshifthsv # -120\ninvert #\nhuecurvergba # all 1 0.9 0.8 0.7 0.6 0.5 0 0.5 0.6 0.7 0.4 0.3 0.2 0.1 0\nswaprgba # bgr\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$2\ncopy #$ #$3\ncopy #$ #$4\ncopy #$ #$5\ncopy #$ #$6\ncopy #$ #$7\naudiopitch #$2 2**(-4.5/12)\naudiopitch #$3 2**(0/12)\naudiopitch #$4 2**(5/12)\naudiopitch #$5 2**(-16.5/12)\naudiopitch #$6 2**(-12/12)\naudiopitch #$7 2**(-7/12)\naudioputmix #$ #$2\nvolume #$ 6\naudioputmix #$ #$3\nvolume #$ 6\naudioputmix #$ #$4\nvolume #$ 6\naudioputmix #$ #$5\nvolume #$ 6\naudioputmix #$ #$6\nvolume #$ 6\naudioputmix #$ #$7\nvolume #$ 6\nrepeatduration #$ #d\naudioputmix # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1397206544743141387>"
+  },
+  "braxtons g major 74": {
+    "code": "hueshifthsv # 180\ninvert #\nswaprgba # bgr\nhueshifthsvffmpeg # 180\nswaprgba # bgr\nhueshifthsvffmpeg # 180\nget # width w \nget # height h\ncopy # #i\nzoom #i 1.5\nresize # w*1.5 h*1.5\nexplode #i  3\noverlay # #i w/4 h/4\nimplode # 0.7\ncontain # w h\nexplode # 0.45\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 1.122462048309372981433533049679179516232411110613986753440409546\naudiopitch #$p  0.840896415253714543031125476233214895040034262356784510813226086\naudioputmix #$ #$p\nvolume #$ 2\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "braxtons bozos g major 49": {
+    "code": "grayscale #\nhuecurvergba # red 0 0.407843137254901960784313725490196078431372549019607843137254902 1 1 \nhuecurvergba # green 0 0 0 1 \nhuecurvergba # blue 0 0.203921568627450980392156862745098039215686274509803921568627451 0 1\nhueshifthsv # -180\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(-9/12)\naudiopitch #$1 2**(9/12)\naudioputmix #$0 #$1\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "boul123 major": {
+    "code": "hueshifthsv # 120 50\nwave # -#h/25 #w/2\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(3/12)\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "g major 9689": {
+    "code": "contrast # -1\nexplode #\nswaprgba # bgra\nhueshifthsv # 180\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\naudiopitch #$0 2**(9/12)\naudiopitch #$1 2**(12/12)\naudiopitch #$1 2**(4/12)\naudiopitch #$2 2**(-12/12)\naudiopitch #$2 2**(-3/12)\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1233340285044523109>"
+  },
+  "g major 9869": {
+    "code": "swaprgba # bgr\nhueshifthsv # 100\ncontrast # -1\nexplode #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\naudiopitch #$0 2**(-13/12)\naudiopitch #$1 2**(4/12)\naudiopitch #$2 2**(9/12)\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1243248180104265788>"
+  },
+  "h major": {
+    "code": "get # width w \nget # height h\ncopy # #m\ncrop #m w/2 h/2 w/4 h/4\ninvert #m\noverlay # #m w/4 h/4\nhueshifthsv # -140\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 0.891\naudioputmix #$ #$p\nvolume #$ 2\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@860712797045784588>"
+  },
+  "4ormulator v1": {
+    "code": "get # width w\nget # height h\nswaprgba # arab\nrotate # 90\nwaves # w/40 w/4 5\nrotate # 270\nwave # w/40 w/4\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(-24/12)\naudiopitch #$1 2**(-17/12)\naudioputmix #$0 #$1\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "g major 73": {
+    "code": "get # width w\nget # height h\nswaprgba # arab\nrotate # 90\nwaves # w/40 w/4 5\nrotate # 270\nwave # w/40 w/4\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(-24/12)\naudiopitch #$1 2**(-17/12)\naudioputmix #$0 #$1\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "braxtons g major 69": {
+    "code": "get # width w \nget # height h\ncopy # #i\nzoom #i 1.5\nresize # w*1.5 h*1.5\nexplode #i 3\noverlay # #i w/4 h/4\nimplode # 0.7\ncontain # w h\nzoom # 1.3\ncover # w h\nshake # 5 0\nshake # 5 0\nhueshifthsv # 180\n1.12246\n1.68179\n0.56123\n0.42044\n\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\ncopy #$ #$3\ncopy #$ #$4\naudiopitch #$0 0\naudiopitch #$1 1.12246\naudiopitch #$1 2\naudiopitch #$2 1.68179\naudiopitch #$3 0.56123\naudiopitch #$4 0.42044\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\naudioputmix #$0 #$3\nvolume #$0\naudioputmix #$0 #$4\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1246534277382803489>"
+  },
+  "braxtons g major 30": {
+    "code": "get # width w\nget # height h\nswirl # 174\nwave # w/-50 h/3.5\nswirl # -174\nhueshifthsv # 180\ninvert #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\ncopy #$ #$3\ncopy #$ #$4\ncopy #$ #$5\ncopy #$ #$6\naudiopitch #$0 0.3968502629920498686879264098180770650978733319749632524520714405/12\naudiopitch #$1 0.4719371563408467483209565783337671880037841516693714068710625713/12\naudiopitch #$2 0.5946035575013605333587499852802379576464860462319087065095011124\naudiopitch #$3 0.840896415253714543031125476233214895040034262356784510813226086\naudiopitch #$4 1.059463094359295264561825294946341700779204317494185628559208431\naudiopitch #$5 1.498307076876681498799280732029795796302151553731746876441023844\naudiopitch #$6 2\naudiopitch #$6 1.122462048309372981433533049679179516232411110613986753440409546\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\naudioputmix #$0 #$3\nvolume #$0\naudioputmix #$0 #$4\nvolume #$0\naudioputmix #$0 #$5\nvolume #$0\naudioputmix #$0 #$6\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "3162-dxi": {
+    "code": "get # width w\nget # height h\ninvert #\nhueshifthsv # 255.2\ncontrast # 2\nshake # 3.5 3.5\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\naudiopitch #$0 1.059\naudiopitch #$1 0.42\naudiopitch #$2 0.17\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\nrepeatduration #$0 #d\naudioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1246534277382803489>"
+  },
+  "braxtons g major 19": {
+    "code": "swaprgba # bgr\nhaah #\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-1/12)\naudiopitch #$p 2**(1/12)\naudioputmix #$ #$p\nvolume #\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1336690979553415269>"
+  },
+  "salagata major": {
+    "code": "grayscale #\nhuecurvergba # red 127/255 127/255 0/255 127/255\nhuecurvergba # green 127/255 127/255 255/255 0/255\nhuecurvergba # blue 127/255 127/255 255/255 127/255\nswirl # -50\nhaah #\ncopy # #$\n    convert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\ncopy #$ #$3\ncopy #$ #$4\naudiopitch #$0 2**(2/12)\naudiopitch #$1 2**(3/12)\naudiopitch #$2 2**(5/12)\naudiopitch #$3 2**(-4/12)\naudiopitch #$4 2**(-6/12)\naudioputmix #$0 #$1\n    volume #$0\naudioputmix #$0 #$2\n    volume #$0\naudioputmix #$0 #$3\n    volume #$0\naudioputmix #$0 #$4\n    volume #$0\nrepeatduration #$0 #d\n    audioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "g minor 305": {
+    "code": "hueshifthsv # 120\ncopy # #$\ncopy #$  #$p\naudiopitch #$ 1.498 \naudiopitch #$p 0.5 \naudioputmix #$ #$p\nvolume #$ 2\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1348704647262502912>"
+  },
+  "mirror horizontal": {
+    "code": "haah #",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "mirror vertical": {
+    "code": "woow #",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "flip vertical": {
+    "code": "flip #",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "flip horizontal": {
+    "code": "flop #",
+    "args": "0",
+    "params": [],
+    "author": "<@1005205558497906839>"
+  },
+  "swirl": {
+    "code": "swirl # {arg:1}",
+    "args": "1",
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@1005205558497906839>"
+  },
+  "detunnel": {
+    "code": "detunnel #\nexplode #",
+    "args": "0",
+    "params": [],
+    "author": "<@1338719393634455562>"
+  },
+  "samzong": {
+    "code": "waves # 0w/66 0w/33 10\ndetunnel #\nslide # 1 left\ntunnel #\nspin # yes no yes\nshuffle # 0.1\nhueshifthsv # 999\naudiopitch # 2\ncontrast # 100",
+    "args": "0",
+    "params": [],
+    "author": "<@1338719393634455562>"
+  },
+  "huehsvffmpeg": {
+    "code": "hueshifthsvffmpeg # {arg:1} {arg:2} {arg:3}",
+    "args": "3",
+    "params": [
+      "{arg:1}",
+      "{arg:2}",
+      "{arg:3}"
+    ],
+    "author": "<@1338719393634455562>"
+  },
+  "normal?": {
+    "code": "volume # {arg:1}",
+    "args": "1",
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@1005205558497906839>"
+  },
+  "caption": {
+    "code": "caption # {arg:1}",
+    "args": "1",
+    "params": [
+      "{arg:1}"
+    ],
+    "author": "<@1338719393634455562>"
+  },
+  "g major 6644": {
+    "code": "invert #\nswaprgba # bgr\nhueshifthsv # 140\nwave # #h/18 #w/4.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**(-5/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1373930586049347596>"
+  },
+  "g major 140": {
+    "code": "swaprgba # bgr\ninvert #\nhueshifthsv # 180\nwave # #h/18 #w/2.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2(12/12)\naudiopitch #$p 2(4/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "<@1373930586049347596>"
+  },
+  "marios g major 100": {
+    "code": "swaprgba # bgra \nhueshifthsv # 260\ncopy # #$\n    convert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(4/12)\naudiopitch #$1 2**(-4/12)\naudioputmix #$0 #$1\n    volume #$0\nrepeatduration #$0 #d\n    audioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1325404939190665323>"
+  },
+  "g major 410": {
+    "code": "swaprgba # bgr\ninvert #\nhueshifthsv # 180\nwave # #h/18 #w/2.5\ncover # 0w 0h\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2(12/12)\naudiopitch #$p 2(4/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "args": "0",
+    "params": [],
+    "author": "@!"
+  },
+  "g major 4338": {
+    "code": "contrast # -1\nwaaw #\nhooh #\nhueshifthsvffmpeg # 100 5\nhueshifthsv # -100 10\ncontrast # -1\ninvert #\ncreate bg #w #h 0 0 0\noverlay bg # 0 0 white 0.1 0.5\noverlay # bg\nswirl # 4.5\ncopy # #$\n    convert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\ncopy #$ #$3\naudiopitch #$0 2**(12/12)\naudiopitch #$1 2**(3/12)\naudiopitch #$2 2**(-3/12)\naudiopitch #$3 2**(-12/12)\naudioputmix #$0 #$1\n    volume #$0\naudioputmix #$0 #$2\n    volume #$0\naudioputmix #$0 #$3\n    volume #$0\nrepeatduration #$0 #d\n    audioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1172709345654493284>"
+  },
+  "2013-dxi": {
+    "code": "hueshifthsv # 108 60\nshake # 0 10 true\ncopy # #$\n    convert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(0/12)\naudiopitch #$1 2**(6.5/12)\naudioputmix #$0 #$1\n    volume #$0\nrepeatduration #$0 #d\n    audioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1172709345654493284>"
+  },
+  "ttble76s g major 1": {
+    "code": "invertrgba # 0 1 1\nhueshifthsv # -100\nflop #\ncopy # #$\n    convert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 0.5\naudiopitch #$1 1.189\naudioputmix #$0 #$1\n    volume #$0\nrepeatduration #$0 #d\n    audioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1329942463506546709>"
+  },
+  "2011-dxi": {
+    "code": "invert #\nhueshifthsv # 0 60\nshake # 0 10 true\nswirl # 2\ncopy # #$\n    convert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(0/12)\naudiopitch #$1 2**(-0.1/12)\naudiopitch #$2 2**(-12/12)\naudiopitch #$3 2**(-12.1/12)\naudioputmix #$0 #$1\n    volume #$0\naudioputmix #$0 #$2\n    volume #$0\naudioputmix #$0 #$3\n    volume #$0\nrepeatduration #$0 #d\n    audioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1172709345654493284>"
+  },
+  "2012-dxi": {
+    "code": "hueshifthsv # -82 60\ninvert #\nshake # 0 10 true\ncopy # #$\n    convert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$0 2**(0/12)\naudiopitch #$1 2**(-5.5/12)\naudioputmix #$0 #$1\n    volume #$0\nrepeatduration #$0 #d\n    audioputreplace # #$0",
+    "args": "0",
+    "params": [],
+    "author": "<@1172709345654493284>"
+  }
+}
