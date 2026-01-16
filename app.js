@@ -1,14 +1,17 @@
+require("dotenv").config();
+
 const express = require("express")
 const app = express();
-const PORT = 8080;
 
-app.get("/",(req,res) => {
-    res.setHeader("Content-Type","text/html");
-    res.write(`<html>
-            <h1>hello</h1>
-        </html>`)
-    res.send()
-})
+const messageRouter = require("./routes/message");
+const { errorHandler }= require("./middleware/error");
+
+const PORT = process.env.PORT;
+
+app.use(express.json());
+app.use("/api/v1/message",messageRouter);
+
+app.use(errorHandler)
 
 app.listen(PORT,() => {
     console.log(`Server running at http://localhost:${PORT}`);
