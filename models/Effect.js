@@ -1,6 +1,6 @@
 const { filterProperties } = require("../utils/object");
 const { sanitize } = require("../utils/sanitize");
-const { readJson, editJson } = require("../utils/jsonFile");
+const { readJson, editJson, deleteJsonProperty } = require("../utils/jsonFile");
 const fs = require("fs").promises;
 
 
@@ -73,7 +73,9 @@ async function addEffect(effectName,code,effectArgs = 0,author = "<@100520555849
     await editJson("../effects.json",effect);
 }
 
-addEffect("mute","volume # 0")
+async function deleteEffect(effectName) {
+    await deleteJsonProperty("../effects.json",effectName);
+}
 
 module.exports = {
     getEffect, getEffectList, getEffects, addEffect
