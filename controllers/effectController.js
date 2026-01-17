@@ -1,0 +1,1 @@
+const Effect = require("../models/Effect");
