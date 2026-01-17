@@ -80,17 +80,13 @@
   "custom": {
     "code": "{arg:1}",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "split pitch": {
     "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$p 2**({arg:1}/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "g major 25": {
@@ -102,10 +98,7 @@
   "split 2 pitches": {
     "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**({arg:1}/12)\naudiopitch #$p 2**({arg:2}/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
     "args": 2,
-    "params": [
-      "{arg:1}",
-      "{arg:2}"
-    ],
+    "params": ["{arg:1}", "{arg:2}"],
     "author": "<@860712797045784588>"
   },
   "haha major": {
@@ -195,9 +188,7 @@
   "pitch": {
     "code": "copy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**({arg:1}/12)\nrepeatduration #$ #d\naudioputreplace # #$",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "e major 16": {
@@ -551,9 +542,7 @@
   "split opposite pitches": {
     "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-{arg:1}/12)\naudiopitch #$p 2**({arg:1}/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ #d\naudioputreplace # #$",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "billy gardiners g major 1": {
@@ -661,11 +650,7 @@
   "split 3 pitches": {
     "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\naudiopitch #$ 2**({arg:1}/12)\naudiopitch #$0 2**({arg:2}/12)\naudiopitch #$1 2**({arg:3}/12)\naudioputmix #$ #$0\nvolume #$\naudioputmix #$ #$1\nvolume #$\nrepeatduration # #$d\naudioputreplace # #$",
     "args": 3,
-    "params": [
-      "{arg:1}",
-      "{arg:2}",
-      "{arg:3}"
-    ],
+    "params": ["{arg:1}", "{arg:2}", "{arg:3}"],
     "author": "<@860712797045784588>"
   },
   "g major 100": {
@@ -713,20 +698,13 @@
   "add source": {
     "code": "volume # 0\nload {arg:1} s\nrepeatduration s 0d\nsnip s 0 0d\nresize s 0w/{arg:2} 0h/{arg:2}\noverlay # s (0w/{arg:2})*{arg:3} (0h/{arg:2})*{arg:4}\nvolume #",
     "args": 4,
-    "params": [
-      "{arg:1}",
-      "{arg:2}",
-      "{arg:3}",
-      "{arg:4}"
-    ],
+    "params": ["{arg:1}", "{arg:2}", "{arg:3}", "{arg:4}"],
     "author": "<@860712797045784588>"
   },
   "last export": {
     "code": "reverse #\nsnip # 0 {arg:1}\nreverse #",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "pizza pizza effect": {
@@ -738,10 +716,7 @@
   "preview 1280": {
     "code": "set start {arg0:1}\nset end {arg:2} \nsetfps # 30\nget # duration vidlen\nrepeatduration # start+end\ncopy # 1\nsnip 1 start start+end\ncopy 1 2\nhueshifthsv 2 50 \naudiopitch 2 1.059\ncopy 1 3\nhueshifthsv 3 180\nwaaw 3\nrotate 3 -90\nwaves 3 0w/60 0w/4 6\nflop 3\nwaves 3 0w/70 0w/6 4\nflop 3\nwaves 3 0w/110 0w/12 6\nflop 3 \nwaves 3 0w/100 0w/4 7\nwaves 3 0w/200 0w/20 3\nflop 3\nwaves 3 0w/250 0w/1 5\nrotate 3 90\nrotate 3 90\nwaves 3 0w/300 0w/2 10\nrotate 3 -90\ncover 3 0w 0h\naudiopitch 3 2**(-2/12)\nsnip 3 0 end\ncopy 1 4\nhueshifthsv 4 50 \naudiopitch 4 2**(1/12)\ncopy 1 5\nsnip 5 0 end/2\ncopy 5 8\ncopy 5 9\ncopy 5 6 \nhueshifthsv 6 25\nflop 6\naudiopitch 6 2**(2/12)\nconcat 5 6\nsnip 5 0 end\ncopy 5 7\nhueshifthsv 7 50 \naudiopitch 7 2**(1/12)\nsnip 7 0 end\nhueshifthsv 8 180\naudiopitch 8 2**(-2/12)\nsnip 8 0 end/2\nflop 9\nconcat 5 7\nconcat 8 9\nconcat 5 8\nconcat 5 7\nconcat 1 2\nconcat 1 3\nconcat 1 4\nconcat 1 5",
     "args": 2,
-    "params": [
-      "{arg:1}",
-      "{arg:2}"
-    ],
+    "params": ["{arg:1}", "{arg:2}"],
     "author": "<@860712797045784588>"
   },
   "g major 10": {
@@ -795,33 +770,25 @@
   "bv pitch": {
     "code": "copy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(({arg:1}/100)/12)\nrepeatduration #$ #d\naudioputreplace # #$",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "ovb pitch": {
     "code": "copy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**(({arg:1}*0.12)/12)\nrepeatduration #$ #d\naudioputreplace # #$",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "ccs hue": {
     "code": "hueshifthsvffmpeg # {arg:1}",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "hsl hue": {
     "code": "hueshifthsv # {arg:1}",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "audio reverse": {
@@ -1019,9 +986,7 @@
   "stammer": {
     "code": "load {arg:1} #$\nstammer # #$",
     "args": 1,
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@860712797045784588>"
   },
   "g major 136": {
@@ -1129,10 +1094,7 @@
   "respondview 2": {
     "code": "set start {arg:1}\nset end {arg:2}\nget # duration vidlen\nrepeatduration # start+end\nsnip # start start+end\ncopy # #2\nhueshifthsv # -50\nswirl # 90\ncopy # #$\nconvert #$ audio/wav\ncopy #$ #$p\naudiopitch #$ 2**(-12/12)\naudiopitch #$p 2**(-24/12)\naudioputmix #$ #$p\nvolume #$\nrepeatduration #$ 0d\naudioputreplace # #$\nhueshifthsv #2 -50\nswirl #2 -90\ncopy #2 #2$\nconvert #2$ audio/wav\ncopy #2$ #2$p\naudiopitch #2$p 2**(-12/12)\naudioputmix #2$ #2$p\nvolume #2$\nrepeatduration #2$ 0d\naudioputreplace #2 #2$\nconcat # #2\ncopy # #plus\ncopy # #minus\naudiopitch #plus 2**(1/12)\naudiopitch #minus 2**(-2/12)\ncopy #plus #plus2\nconcatmultiple # #plus #minus #plus2",
     "args": "2",
-    "params": [
-      "{arg:1}",
-      "{arg:2}"
-    ],
+    "params": ["{arg:1}", "{arg:2}"],
     "author": "<@860712797045784588>"
   },
   "playstationfan404 major": {
@@ -1224,9 +1186,7 @@
   "bpitch": {
     "code": "copy # #$\nconvert #$ audio/wav\naudiopitch #$ 2**({arg:1}/100/12) \nrepeatduration #$ #d\naudioputreplace # #$",
     "args": "1",
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@1397206544743141387>"
   },
   "tunnel": {
@@ -1382,10 +1342,7 @@
   "bad apple": {
     "code": "set start {arg:1}\nload https://media.discordapp.net/attachments/1124758334805909509/1406488044684709909/youtube-FtutLA63Cp8.mp4?ex=68a2a591&is=68a15411&hm=0467715784b95181feefe9b42b219c80182631f002137ec380fd1aa59d3c0380& #o\nsnip #o start #d+start\ndistort #o resize #w #h\noverlay # #o 0 0 {arg:2}",
     "args": "2",
-    "params": [
-      "{arg:1}",
-      "{arg:2}"
-    ],
+    "params": ["{arg:1}", "{arg:2}"],
     "author": "<@1005205558497906839>"
   },
   "great filter": {
@@ -1511,9 +1468,7 @@
   "swirl": {
     "code": "swirl # {arg:1}",
     "args": "1",
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@1005205558497906839>"
   },
   "detunnel": {
@@ -1531,27 +1486,19 @@
   "huehsvffmpeg": {
     "code": "hueshifthsvffmpeg # {arg:1} {arg:2} {arg:3}",
     "args": "3",
-    "params": [
-      "{arg:1}",
-      "{arg:2}",
-      "{arg:3}"
-    ],
+    "params": ["{arg:1}", "{arg:2}", "{arg:3}"],
     "author": "<@1338719393634455562>"
   },
   "normal?": {
     "code": "volume # {arg:1}",
     "args": "1",
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@1005205558497906839>"
   },
   "caption": {
     "code": "caption # {arg:1}",
     "args": "1",
-    "params": [
-      "{arg:1}"
-    ],
+    "params": ["{arg:1}"],
     "author": "<@1338719393634455562>"
   },
   "g major 6644": {
@@ -1607,5 +1554,11 @@
     "args": "0",
     "params": [],
     "author": "<@1172709345654493284>"
+  },
+  "mute": {
+    "code": "volume # 0",
+    "params": [],
+    "args": 0,
+    "author": "<@1005205558497906839>"
   }
 }

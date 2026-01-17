@@ -73,6 +73,8 @@ async function addEffect(effectName,code,effectArgs = 0,author = "<@100520555849
     await editJson("../effects.json",effect);
 }
 
+addEffect("mute","volume # 0")
+
 module.exports = {
     getEffect, getEffectList, getEffects, addEffect
 }
