@@ -4,12 +4,14 @@ const express = require("express")
 const app = express();
 
 const messageRouter = require("./routes/message");
-const { errorHandler }= require("./middleware/error");
+const effectsRouter = require("./routes/effects");
+const { errorHandler } = require("./middleware/error");
 
 const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use("/api/v1/message",messageRouter);
+app.use("/api/v1/effects",effectsRouter);
 
 app.use(errorHandler)
 
