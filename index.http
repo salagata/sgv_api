@@ -1,1 +1,1 @@
-DELETE  http://localhost:3000/api/v1/effects/list/something HTTP/1.1
+GET http://localhost:3000/api/v1/effects/list/split%20any%20pitches?length=8 HTTP/1.1

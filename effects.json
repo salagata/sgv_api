@@ -1560,5 +1560,19 @@
     "params": [],
     "args": 0,
     "author": "<@1005205558497906839>"
+  },
+  "split any pitches": {
+    "args": 3,
+    "params": ["{arg:1}", "{arg:2}","{arg:3}"],
+    "code": "copy # #$\nconvert #$ audio/wav\ncopy #$ #$0\ncopy #$ #$1\ncopy #$ #$2\naudiopitch #$0 2**({arg:1}/12)\naudiopitch #$1 2**({arg:2}/12)\naudiopitch #$2 2**({arg:3}/12)\naudioputmix #$0 #$1\nvolume #$0\naudioputmix #$0 #$2\nvolume #$0\nclone #$0 #$\nrepeatduration #$ #d\naudioputreplace # #$",
+    "author": "<@1005205558497906839>",
+    "generated": true
+  },
+  "multi gradient map": {
+    "args": 3,
+    "params": ["{arg:1}", "{arg:2}", "{arg:3}"],
+    "code": "grayscale #\nhuecurvergba # red {arg:1}/255\nhuecurvergba # green {arg:2}/255\nhuecurvergba # blue {arg:3}/255",
+    "author": "<@1005205558497906839>",
+    "generated": true
   }
 }
